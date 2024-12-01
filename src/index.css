@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --radius: 0.5rem
+  }
+}
+
+/* Sidebar transitions */
+.fixed {
+  z-index: 50; /* Sidebar is above all other elements */
+}
+
+.bg-opacity-25 {
+  z-index: 40; /* Overlay is below sidebar but above map */
+}
+
+.map-container {
+  z-index: 0; /* Ensure map stays below other components */
+}
